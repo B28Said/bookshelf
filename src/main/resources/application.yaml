@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: bookshelf
+
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/bookshelf}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    show-sql: true
+
+server:
+  port: 8080
